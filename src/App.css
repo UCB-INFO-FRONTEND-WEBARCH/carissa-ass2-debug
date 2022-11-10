@@ -1,0 +1,345 @@
+/* This is your CSS files */
+body {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  width: 100%; 
+  
+}
+
+.hamburger{
+  width: 28px;
+  height: 1.5px;
+  background-color: white;
+  margin: 6px 0;
+  margin-left:20px;
+}
+
+.quick-find{
+  margin-top:12px;
+  position: absolute;
+  z-index:1;
+  margin-top: -30px
+}
+
+input{
+  margin-left: 70px;
+  height:30px;
+  background-color:#e1928b;
+  font-family: 'Roboto';font-size: 14px;
+  border-style: none;
+  border-radius:5px;
+  width: 200px;
+  position: absolute;
+  z-index: 1 ;
+
+}
+
+input::placeholder{
+  color: white;
+  padding-left: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+input:focus::placeholder{
+  color:transparent;
+  
+}
+input:focus{
+  padding-left: 45px;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
+
+
+button{
+  z-index: 1;
+  margin-left: 80px;
+  margin-top: 6px;
+  height: 25px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.search{
+  height: 25px;
+  color:#ffffff;
+  -webkit-text-stroke: .001px;
+}
+
+.search:focus{
+  color:transparent
+}
+.search:active{
+  opacity: 0;
+  background-color: black;
+}
+
+
+.menu:hover {
+  background-color: rgb(240, 231, 215);
+  cursor: pointer;
+}
+.menu{
+  padding:10px;
+  margin-left: -85px
+}
+
+.menu-icon{
+  padding-top: 12px;
+  
+}
+
+
+.projects{
+  list-style: none;
+  text-align: left;
+  margin-left: -100px
+}
+.boxes{
+  margin-left: 0px;
+}
+
+.collapsible{
+  background-color: transparent;
+  padding: 4px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  
+}
+.collapsible:hover {
+  background-color: rgb(240, 231, 215);
+}
+.classes{
+  padding: 8px;
+}
+
+.to-do-list{
+  list-style:none;
+  display: none;
+  
+}
+.to-do{
+  padding: 5px;
+}
+
+
+
+
+
+
+input[type="checkbox"]{
+  appearance: none;
+  border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border: solid #cb7676;
+	background-color: white;
+	padding: 3px;
+  margin-left: 0;
+  margin-top: 33px;
+
+}
+
+input[type="checkbox"]:hover{
+  background-color: rgb(227, 181, 181);
+  cursor: pointer
+}
+
+input[type="checkbox"]:checked{
+  text-decoration:line-through;
+  background-color: rgb(227, 181, 181)
+} 
+
+.boxes input[type="checkbox"]:checked +label{
+  text-decoration:line-through;
+}
+
+
+
+
+label{
+  margin-left:5%
+}
+
+span.taskCount{
+  color: #7e7d79;
+  font-size: 13px;
+  margin-left: 10px;
+  
+}
+
+span.listText {
+  margin-left: 10px;
+
+}
+span.taskText{
+  margin-left: -10px
+}
+span.addtaskText{
+  margin-left: 10px
+}
+
+#project{
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color:rgb(218, 215, 215);
+  height: 20px;
+  padding-bottom: 25px
+  
+}
+
+/* Today Edits */
+#grid{
+  grid-template-columns: 300px 0px auto;
+  grid-column-gap: 0px;
+  grid-template-rows: auto;
+  display: grid;
+  width: 100%;
+  
+} 
+
+#sidebar{
+  margin-left: -300px;
+  margin-top: 50px;
+  height: 1000px
+  
+}
+
+#right-content{
+  /* margin-left: -110px; */
+  margin-top: 50px;
+  background-color:white;
+  padding-top:20px;
+  padding-bottom: 50%;
+  padding-left:40px;
+  
+ 
+}
+
+
+.todo {
+  padding-top: 20px;
+  padding-left: 0px;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-color:rgb(227, 181, 181);
+  padding: 15px;
+  margin-right:30%;
+  margin-left: 4%;
+  text-align: left;
+}
+
+
+.complete-btn{
+  position: relative;
+  margin-left: 20px; 
+  font-size: 20px;
+}
+.trash-btn{
+  position: relative;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-bottom: 20;
+  padding-bottom: -25px;
+
+}
+
+.trash-btn:hover{
+  cursor:pointer ;
+  
+}
+
+.trash-spacing{
+margin-left: 85%
+}
+
+.todo-items{
+  z-index: 1;
+  margin-left: 10px;
+  padding-left: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-top: -20px
+}
+
+.todo-btn{
+  font-size: 20px;
+  position: relative;
+  margin-left: 58px;
+
+}
+
+.todo-input{
+  display:none;
+  color:black
+}
+.tags-input{
+  height: 40px;
+  background-color: rgb(229, 203, 215);
+  font-size: 20px;
+  margin-left:0;
+  width: 400px;
+ }
+
+
+.main-nav{
+  z-index: 1;
+  
+}
+header{
+  background-color:#dc4c3e;
+  grid-template-rows: auto;
+  height: 50px;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #ffffff;
+  width: 2224px
+}
+
+
+.side-bar{
+  background-color:#fefbf2;
+  float: left;
+  margin-left:0%;
+  padding-bottom: 300%;
+  padding-top: 30px;
+  border-bottom-left-radius: 10px;
+
+}
+
+/* New Edits Here */
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.todo {
+  cursor: pointer;
+}
+.strike {
+  text-decoration: line-through;
+
+}
+
+.listings{
+  font-size: 16px;
+}
+
+.task-form{
+  margin-left: 80px
+
+}
